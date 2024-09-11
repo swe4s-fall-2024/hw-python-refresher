@@ -1,4 +1,4 @@
-def get_rows_by_column_value(file_path, column_index, column_num):
+def get_rows_by_column_value(file_path, column_index):
    matching_rows = []
    f = open(file_path, "r")
    for x in f:
@@ -8,4 +8,4 @@ def get_rows_by_column_value(file_path, column_index, column_num):
         if column_index == column_value:
             matching_rows.append(i_list)
             print(matching_rows)
-    return matching_rows
+   return matching_rows
